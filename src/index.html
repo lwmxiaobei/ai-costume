@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+<title>男装服饰集</title>
+<meta name="description" content="1200 套男装搭配参考图，按季节与风格分类浏览，提供压缩预览与高清原图下载。">
+<style>
+:root{
+  --bg:#0d0f12;--bg2:#14171c;--panel:#1a1e24;--line:#272c34;--line2:#343a44;
+  --tx:#e9ecf1;--tx2:#a3abb8;--tx3:#6c7482;--ac:#8fb4ff;--ac2:#c3d5ff;
+  --r:14px;--sh:0 10px 30px rgba(0,0,0,.45);
+  --f:system-ui,-apple-system,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--tx);font-family:var(--f);-webkit-font-smoothing:antialiased}
+body{min-height:100vh;background:radial-gradient(1200px 500px at 15% -10%,#1b2433 0,transparent 60%),radial-gradient(900px 400px at 100% 0,#211a2b 0,transparent 55%),var(--bg)}
+button,select,input{font:inherit;color:inherit}
+
+/* 页头 */
+.hero{padding:34px clamp(16px,4vw,48px) 18px;max-width:1600px;margin:0 auto}
+.hero-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px 16px;flex-wrap:wrap}
+.hero-actions{display:flex;align-items:center;flex-wrap:wrap;justify-content:flex-end;gap:10px;margin-left:auto;max-width:100%}
+.language select{min-height:52px;max-width:100%;padding:0 30px 0 14px;background:var(--panel);border:1px solid #4a525f;border-radius:12px;font-size:15px;cursor:pointer}
+.language select:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+.eyebrow{font-size:12px;letter-spacing:.22em;color:var(--tx3);text-transform:uppercase;padding-top:18px}
+.hero h1{margin:6px 0 4px;font-size:clamp(24px,3.4vw,38px);font-weight:700;letter-spacing:.02em}
+.hero h1 span:first-child{background:linear-gradient(90deg,var(--ac2),#e3c8ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--tx2);font-size:14px;margin:0;line-height:1.7}
+
+/* 右上角说明面板 */
+.infotabs{position:relative;display:flex;gap:6px;margin-left:auto;padding:4px;border:1px solid #4a525f;border-radius:12px;background:rgba(26,30,36,.7)}
+.itab{min-height:52px;padding:0 20px;border:0;border-radius:10px;background:transparent;color:#dfe3ea;font-size:16px;font-weight:700;letter-spacing:.03em;cursor:pointer;white-space:nowrap;transition:background .15s,color .15s}
+.itab:hover{background:#232831;color:var(--tx)}
+.itab[aria-expanded="true"]{background:#e9ecf1;color:#111418}
+.itab:focus-visible,.ipclose:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+.ipanel{position:absolute;right:0;top:calc(100% + 8px);z-index:30;width:min(460px,calc(100vw - 32px));max-height:min(70vh,560px);overflow:auto;border:1px solid var(--line2);background:var(--panel);border-radius:var(--r);box-shadow:var(--sh);padding:16px 20px 18px}
+.ipanel[hidden]{display:none}
+.ipanel:focus{outline:none}
+.ipanel-hd{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px}
+.ipanel h2{margin:0;font-size:17px;letter-spacing:.04em}
+.ipclose{width:48px;height:48px;flex:0 0 48px;font-size:20px;border:1px solid var(--line2);border-radius:50%;background:transparent;cursor:pointer}
+.ipanel ul{margin:0;padding-left:1.2em;color:var(--tx2);font-size:14px;line-height:1.8}
+.ipanel li+li{margin-top:4px}
+.ipanel .author{margin:12px 0 0;color:var(--tx2);font-size:14px;line-height:1.8}
+.ipanel .author a{color:var(--ac2)}
+@media (max-width:560px){.ipanel{position:fixed;left:16px;right:16px;width:auto}}
+
+/* 工具栏 */
+.tools{position:sticky;top:0;z-index:20;background:rgba(13,15,18,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.tools-in{max-width:1600px;margin:0 auto;padding:12px clamp(16px,4vw,48px)}
+.tabs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;min-height:52px;padding:0 18px;border:1px solid #4a525f;border-radius:12px;background:var(--panel);font-size:16px;font-weight:700;cursor:pointer;white-space:nowrap}
+.tab em{font-style:normal;font-weight:500;font-size:13px;color:var(--tx3);margin-left:6px}
+.tab:hover{border-color:#6a7382}
+.tab[aria-selected=true]{background:#e9ecf1;color:#111418;border-color:#e9ecf1}
+.tab[aria-selected=true] em{color:#4a525f}
+.row2{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+.search{flex:1 1 240px;position:relative}
+.search input{width:100%;min-height:52px;font-size:16px;background:var(--panel);border:1px solid #4a525f;border-radius:12px;padding:0 14px 0 40px;outline:none}
+.search input:focus{border-color:var(--ac)}
+.search svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);opacity:.5}
+.count{margin-left:auto;color:var(--tx2);font-size:14px;font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* 网格 */
+main{max-width:1600px;margin:0 auto;padding:22px clamp(16px,4vw,48px) 60px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease,border-color .18s;outline:none}
+.card:hover,.card:focus-visible{transform:translateY(-4px);box-shadow:var(--sh);border-color:#3b4350}
+.card:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+.ph{position:relative;aspect-ratio:2/3;background:#e9e9e7;overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:contain;display:block}
+.meta{padding:12px 14px 14px}
+.meta .row{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.meta .id{font-family:var(--mono);font-size:12px;color:var(--tx2)}
+.meta .cat{font-size:12px;color:var(--tx2)}
+.meta .desc{font-size:13px;line-height:1.55;color:#c6ccd6;margin-top:6px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.empty{grid-column:1/-1;text-align:center;color:var(--tx3);padding:80px 0;line-height:1.8}
+.empty b{display:block;color:var(--tx2);font-size:18px;margin-bottom:6px}
+.btn2{display:flex;align-items:center;justify-content:center;min-height:52px;border-radius:12px;font-size:16px;font-weight:700;cursor:pointer;background:var(--panel);border:1px solid #4a525f;color:var(--tx)}
+.btn2:hover{border-color:#6a7382}
+.btn2:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.morebtn{margin:26px auto 0;min-width:260px;padding:0 28px}
+.morebtn[hidden]{display:none}
+
+/* 大图弹窗 */
+.modal{position:fixed;inset:0;z-index:50;background:rgba(5,6,8,.9);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:max(12px,env(safe-area-inset-top)) 12px}
+.modal.open{display:flex}
+.mbox{width:min(1200px,100%);max-height:100%;display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:18px;background:var(--bg2);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:var(--sh)}
+.mimg{position:relative;background:#e9e9e7;border-radius:12px;display:flex;align-items:center;justify-content:center;min-height:0;height:min(78vh,900px)}
+.mimg img{width:100%;height:100%;object-fit:contain}
+.nav{position:absolute;top:50%;transform:translateY(-50%);width:56px;height:56px;border-radius:50%;border:0;background:rgba(13,15,18,.7);color:#fff;font-size:22px;cursor:pointer}
+.nav.l{left:10px}.nav.r{right:10px}
+.mside{display:flex;flex-direction:column;gap:12px;min-width:0}
+.mside h2{margin:0;font-size:20px;line-height:1.35;font-family:var(--mono)}
+.mside .id{font-size:13px;color:var(--tx3)}
+.mside .lbl{font-size:12px;color:var(--tx3);letter-spacing:.06em;margin-bottom:4px}
+.mdesc{font-size:15px;line-height:1.7;color:#dfe3ea;max-height:40vh;overflow:auto;word-break:break-word}
+.close{position:absolute;top:14px;right:16px;width:52px;height:52px;border-radius:50%;border:1px solid #5a6270;background:var(--panel);color:#fff;font-size:24px;cursor:pointer;z-index:2}
+.dl{display:flex;align-items:center;justify-content:center;min-height:52px;border-radius:12px;text-decoration:none;font-size:16px;font-weight:700;color:var(--tx);background:rgba(255,255,255,.05);border:1px solid rgba(195,213,255,.28);transition:transform .18s ease,background-color .18s,border-color .18s}
+.dl:hover{background:rgba(143,180,255,.12);border-color:rgba(195,213,255,.55);transform:translateY(-1px)}
+.dl:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.dl.try{background:linear-gradient(120deg,#a9c6ff 0%,#c9b2ff 50%,#f1c7ef 100%);color:#0b0d12;border:0}
+.dl[hidden]{display:none}
+.keys{font-size:11px;color:var(--tx3);margin-top:auto}
+.keys kbd{border:1px solid var(--line2);border-radius:4px;padding:0 5px;font-family:inherit}
+footer{color:var(--tx3);font-size:12px;text-align:center;padding:8px 16px 44px;line-height:1.7}
+
+/* 原作者署名 */
+.credit{margin-top:18px;max-width:760px;padding:16px 20px;border-radius:18px;background:linear-gradient(135deg,rgba(143,180,255,.10),rgba(201,166,255,.08) 55%,rgba(255,255,255,.02));border:1px solid rgba(195,213,255,.16)}
+.credit p{margin:0 0 12px;font-size:15px;font-weight:600;line-height:1.6}
+.credit-row{display:flex;flex-wrap:wrap;gap:10px}
+.chip{display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 18px;border-radius:99px;text-decoration:none;font-size:15px;font-weight:600;color:var(--tx);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.16);transition:background-color .18s,border-color .18s}
+.chip:hover{background:rgba(255,255,255,.08);border-color:rgba(195,213,255,.45)}
+.chip:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.chip svg{width:16px;height:16px;fill:currentColor}
+.credit.s{margin:0 auto 14px;max-width:640px;text-align:center;background:rgba(255,255,255,.025)}
+.credit.s p{font-size:13px;color:var(--tx2)}
+.credit.s .credit-row{justify-content:center}
+.mcredit{font-size:13px;color:var(--tx2);line-height:1.6}
+.mcredit a{color:var(--ac2)}
+@media (max-width:560px){.credit-row{flex-direction:column;align-items:stretch}.chip{justify-content:center}}
+
+@media (max-width:860px){.mbox{grid-template-columns:1fr;overflow:auto;padding:12px}.mimg{height:58vh}.keys{display:none}}
+@media (max-width:560px){.hero{padding-top:22px}.eyebrow{padding-top:0}.infotabs{margin-left:0}.grid{grid-template-columns:repeat(2,1fr);gap:10px}.meta{padding:9px 10px 10px}
+  .hero-actions{margin-left:0;justify-content:flex-start}.itab{padding:0 14px;font-size:15px}.infotabs{max-width:100%}
+  .meta .row{flex-wrap:wrap}
+  .meta .desc{font-size:12px;-webkit-line-clamp:2}.count{font-size:12px}.tab{padding:0 16px}.morebtn{min-width:0;width:100%}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-top">
+    <div class="eyebrow" data-i18n="eyebrow">MENSWEAR ・ 男装参考图集</div>
+    <div class="hero-actions">
+      <label class="language"><select id="language" aria-label="语言" data-i18n-aria="language">
+        <option value="zh-CN" lang="zh-CN">简体中文</option>
+        <option value="zh-TW" lang="zh-TW">繁體中文</option>
+        <option value="en" lang="en">English</option>
+        <option value="ja" lang="ja">日本語</option>
+      </select></label>
+    <nav class="infotabs" id="infotabs" aria-label="使用提示与注意事项" data-i18n-aria="info">
+      <button type="button" class="itab" aria-haspopup="dialog" aria-expanded="false" aria-controls="ipanel0" data-i18n="tips">使用提示</button>
+      <button type="button" class="itab" aria-haspopup="dialog" aria-expanded="false" aria-controls="ipanel1" data-i18n="terms">注意事项</button>
+      <div class="ipanel" id="ipanel0" role="dialog" aria-labelledby="ipt0" tabindex="-1" hidden>
+        <div class="ipanel-hd"><h2 id="ipt0" data-i18n="tips">使用提示</h2><button type="button" class="ipclose" aria-label="关闭" data-i18n-aria="close">×</button></div>
+        <ul id="tips">
+          <li>可作为参考图，导入各类 AI 工具的"服装参考""图像参考"功能使用。</li>
+          <li>用分类按钮筛选；搜索框支持 ID 和服装关键词（例：牛仔、蕾丝、白、denim）。</li>
+          <li>下载原图后再使用，细节更完整。</li>
+          <li>图中只有服装，没有人物。脸、体型和背景请用其他参考图或提示词补充。</li>
+        </ul>
+      </div>
+      <div class="ipanel" id="ipanel1" role="dialog" aria-labelledby="ipt1" tabindex="-1" hidden>
+        <div class="ipanel-hd"><h2 id="ipt1" data-i18n="terms">注意事项</h2><button type="button" class="ipclose" aria-label="关闭" data-i18n-aria="close">×</button></div>
+        <ul id="notes">
+          <li>本站收录独立生成的男装搭配，可免费商用，用于作品创作、编辑和参考。</li>
+          <li>禁止将本站图片下载后重新上传到自己的网站。</li>
+          <li>图中服装为 AI 生成的虚构设计，不是真实商品照片。</li>
+          <li>浏览时显示压缩预览，下载可获取高清原图。</li>
+        </ul>
+        <p class="author"><span data-i18n="author">作者：</span><a href="https://x.com/linxiaobei888" target="_blank" rel="noopener noreferrer">@linxiaobei888</a></p>
+      </div>
+    </nav>
+    </div>
+  </div>
+  <h1><span data-i18n="titlePrefix">男装</span> <span data-i18n="titleRest">服饰集</span></h1>
+  <p class="sub" id="sub">1200 套男装搭配参考图（2:3）。按季节与风格分类浏览，预览使用压缩图，下载获取高清原图。</p>
+  <div class="credit"><p data-i18n="intro">1200 套独立生成的男装搭配，涵盖日常、四季与特别场合。</p></div>
+</header>
+
+<div class="tools"><div class="tools-in">
+  <div class="tabs" id="tabs" role="tablist" aria-label="分类" data-i18n-aria="categoriesLabel"></div>
+  <div class="row2">
+    <label class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="按 ID 或关键词搜索　例：牛仔、白" autocomplete="off" aria-label="搜索" data-i18n-aria="search"></label>
+    <span class="count" id="count"></span>
+  </div>
+</div></div>
+
+<main><div class="grid" id="grid"></div><button type="button" class="btn2 morebtn" id="more" hidden>加载更多</button></main>
+<footer><div id="foot">男装服饰集 · 1200 套 AI 原创搭配 · 免费浏览与下载</div></footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="大图查看" data-i18n-aria="viewImage">
+  <button class="close" id="mclose" aria-label="关闭" data-i18n-aria="close">×</button>
+  <div class="mbox">
+    <div class="mimg"><img id="mimg" alt=""><button class="nav l" id="mprev" aria-label="上一套" data-i18n-aria="previous">‹</button><button class="nav r" id="mnext" aria-label="下一套" data-i18n-aria="next">›</button></div>
+    <div class="mside">
+      <div><h2 id="mtitle"></h2><div class="id" id="mcat"></div></div>
+      <div><div class="lbl" data-i18n="keywords">关键词</div><div class="mdesc" id="mdesc"></div></div>
+      <a class="dl" id="mdl" href="#" download data-i18n="download">下载原图</a>
+      <a class="dl try" id="mtry" href="#" target="_blank" rel="noopener" hidden data-i18n="tryOn">试穿这套</a>
+      <div class="mcredit" id="mcredit"></div>
+      <div class="keys"><kbd>←</kbd><kbd>→</kbd> <span data-i18n="navigateHint">切换上一套 / 下一套</span>　<kbd>Esc</kbd> <span data-i18n="close">关闭</span></div>
+    </div>
+  </div>
+</div>
+
+<script type="application/json" id="site-config">{}</script>
+<script type="module">
+import { messages, resolveLocale, translate, searchAliases } from './i18n.js';
+const PAGE=120;   // 每次渲染的数量，避免一次性铺满上千张
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let savedLanguage;try{savedLanguage=localStorage.getItem('ai-costume-language')}catch{}
+let LANG=resolveLocale(savedLanguage,navigator.languages||[navigator.language]);
+const t=(key,values)=>translate(LANG,key,values);
+const fmt=n=>Number(n).toLocaleString(LANG);
+const category=c=>messages[LANG].categories[c]||c;
+const keywords=d=>(d.kwLocales?.[LANG]||d.kw.split(/\s+/)).join(' · ');
+const S={cat:'',q:'',n:PAGE};
+let D=[],CATS=[],COUNTS={},VIEW=[];
+let CONFIG=JSON.parse($('#site-config').textContent),loaded=false,failed=false;
+let TRYON='';   // 试穿站地址，site.config.json 里的 tryonUrl，留空就不显示按钮
+const TRYON_CATS=['春','夏','秋','冬','派对'];   // 内衣、性感、泳装不开放试穿
+
+// 常用中文检索词对应英文词，可与各语言的服装描述一起检索。
+const ZH={"黑":"black","黑色":"black","白":"white","白色":"white","红":"red","红色":"red","粉":"pink","粉色":"pink","蓝":"blue","蓝色":"blue","藏青":"navy","海军蓝":"navy","棕":"brown","棕色":"brown","咖啡":"brown","米色":"beige","米白":"ivory","象牙白":"ivory","灰":"grey","灰色":"grey","绿":"green","绿色":"green","黄":"yellow","黄色":"yellow","橙":"orange","橙色":"orange","紫":"purple","紫色":"purple","薰衣草":"lavender","薄荷":"mint","奶油":"cream","金":"gold","金色":"gold","银":"silver","银色":"silver","卡其":"khaki","酒红":"burgundy","橄榄":"olive",
+"连衣裙":"dress","裙子":"skirt","半身裙":"skirt","夹克":"jacket","外套":"coat","大衣":"coat","毛衣":"sweater","开衫":"cardigan","衬衫":"shirt","女衬衫":"blouse","裤子":"pants","长裤":"pants","牛仔裤":"jeans","短裤":"shorts","靴子":"boots","靴":"boots","运动鞋":"sneakers","凉鞋":"sandals","高跟鞋":"heels","乐福鞋":"loafers","浅口鞋":"pumps","袜子":"socks","连裤袜":"tights","丝袜":"stockings","包":"bag","托特包":"tote","帽子":"hat","贝雷帽":"beret","毛线帽":"beanie","丝巾":"scarf","围巾":"scarf","手套":"gloves","腰带":"belt","项链":"necklace","颈链":"choker","吊带":"camisole","文胸":"bra","内裤":"briefs","泳衣":"swimsuit","泳装":"swimsuit","比基尼":"bikini","卫衣":"hoodie","马甲":"vest","背心":"vest","束腰":"corset","睡袍":"robe","浴袍":"robe","高领":"turtleneck","墨镜":"sunglasses","发箍":"headband","围裙":"apron",
+"牛仔":"denim","蕾丝":"lace","缎面":"satin","绸缎":"satin","皮革":"leather","皮":"leather","针织":"knit","麂皮":"suede","皮草":"fur","毛绒":"fur","丝绒":"velvet","天鹅绒":"velvet","羊毛":"wool","雪纺":"chiffon","薄纱":"tulle","网纱":"mesh","灯芯绒":"corduroy","碎花":"floral","花":"floral","波点":"polka-dot","圆点":"polka-dot","蝴蝶结":"ribbon","丝带":"ribbon","荷叶边":"frill","褶边":"frill","百褶":"pleated","迷你":"mini","中长":"midi","长款":"maxi"};
+
+function drawTabs(){
+  const tabs=[['',t('all'),D.length],...CATS.map(c=>[c,category(c),COUNTS[c]||0])];
+  $('#tabs').innerHTML=tabs.map(([v,l,n])=>`<button class="tab" role="tab" data-v="${esc(v)}" aria-selected="${S.cat===v}">${esc(l)}<em>${esc(t('imageCount',{count:fmt(n)}))}</em></button>`).join('');
+}
+$('#tabs').onclick=e=>{const b=e.target.closest('.tab');if(!b)return;S.cat=b.dataset.v;S.n=PAGE;drawTabs();draw();scrollTo({top:Math.min(scrollY,$('.tools').offsetTop)})};
+let qt;$('#q').oninput=e=>{clearTimeout(qt);qt=setTimeout(()=>{S.q=e.target.value.trim().toLowerCase();S.n=PAGE;if(loaded)draw()},150)};
+
+function hit(d){
+  if(S.cat&&d.cat!==S.cat)return false;
+  if(!S.q)return true;
+  const id=d.id.toLowerCase(),kw=[d.kw,...Object.values(d.kwLocales||{}).flat()].join(' ').toLowerCase(),tk=kw.split(/\s+/);
+  return S.q.split(/\s+/).every(w=>{const e=searchAliases[w]||ZH[w]||w;return id.includes(w)||d.cat.includes(w)||Object.values(messages).some(m=>(m.categories[d.cat]||'').toLowerCase().includes(w))||kw.includes(w)||tk.some(t=>t.startsWith(e))});
+}
+function card(d,i){return `<article class="card" tabindex="0" data-i="${i}"><div class="ph"><img loading="lazy" decoding="async" src="${esc(d.thumb)}" alt="${esc(d.id)}"></div>
+  <div class="meta"><div class="row"><div class="id">${esc(d.id)}</div><div class="cat">${esc(t('menswear'))} · ${esc(category(d.cat))}</div></div><div class="desc">${esc(keywords(d))}</div></div></article>`}
+function moreBtn(){const m=$('#more');m.hidden=VIEW.length<=S.n;m.textContent=t('more',{count:fmt(Math.max(0,VIEW.length-S.n))})}
+function draw(){
+  VIEW=D.filter(hit);
+  $('#count').textContent=t('total',{count:fmt(VIEW.length)});
+  $('#grid').innerHTML=VIEW.length?VIEW.slice(0,S.n).map(card).join(''):empty('empty');
+  moreBtn();
+}
+function addMore(){if(S.n>=VIEW.length)return;const from=S.n;S.n+=PAGE;$('#grid').insertAdjacentHTML('beforeend',VIEW.slice(from,S.n).map((d,k)=>card(d,from+k)).join(''));moreBtn()}
+$('#more').onclick=addMore;
+if('IntersectionObserver' in window)new IntersectionObserver(es=>{if(es.some(e=>e.isIntersecting))addMore()},{rootMargin:'800px'}).observe($('#more'));
+$('#grid').addEventListener('click',e=>{const c=e.target.closest('.card');if(c)openM(+c.dataset.i)});
+$('#grid').addEventListener('keydown',e=>{if(e.key==='Enter'){const c=e.target.closest('.card');if(c)openM(+c.dataset.i)}});
+
+let MI=0;
+function openM(i){MI=i;$('#modal').classList.add('open');document.body.style.overflow='hidden';showM()}
+function closeM(){$('#modal').classList.remove('open');document.body.style.overflow='';const c=document.querySelector(`.card[data-i="${MI}"]`);c&&c.focus()}
+function showM(){
+  const d=VIEW[MI],img=$('#mimg');img.src=d.thumb;img.alt=d.id;
+  // 先显示缩略图，中图加载完再替换
+  const full=new Image();full.onload=()=>{if(VIEW[MI]===d)img.src=d.img};full.src=d.img;
+  $('#mtitle').textContent=d.id;$('#mcat').textContent=t('menswear')+' · '+category(d.cat);$('#mdesc').textContent=keywords(d);
+  $('#mcredit').textContent=t('imageCredit');
+  const ext=(d.orig.split('.').pop()||'').toUpperCase(),dl=$('#mdl');
+  dl.href=d.orig;dl.setAttribute('download',d.id+'.'+ext.toLowerCase());dl.textContent=t('downloadFile',{ext});
+  const tr=$('#mtry');tr.hidden=!(TRYON&&TRYON_CATS.includes(d.cat));tr.href=TRYON+'?costume='+encodeURIComponent(d.id);
+}
+function step(n){const j=MI+n;if(j<0||j>=VIEW.length)return;MI=j;if(j>=S.n)addMore();showM()}
+$('#mprev').onclick=()=>step(-1);$('#mnext').onclick=()=>step(1);$('#mclose').onclick=closeM;
+$('#modal').onclick=e=>{if(e.target.id==='modal')closeM()};
+document.addEventListener('keydown',e=>{if(!$('#modal').classList.contains('open'))return;
+  if(e.key==='Escape')closeM();else if(e.key==='ArrowRight')step(1);else if(e.key==='ArrowLeft')step(-1)});
+let tx=null;$('#mimg').addEventListener('touchstart',e=>{tx=e.touches[0].clientX},{passive:true});
+$('#mimg').addEventListener('touchend',e=>{if(tx===null)return;const dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>40)step(dx<0?1:-1);tx=null});
+
+/* 右上角面板：点击打开；再次点击、×、Esc、点外部关闭 */
+(()=>{const nav=$('#infotabs');const tabs=[...nav.querySelectorAll('.itab')];let cur=null;
+  const close=back=>{if(!cur)return;const t=cur;t.setAttribute('aria-expanded','false');document.getElementById(t.getAttribute('aria-controls')).hidden=true;cur=null;if(back)t.focus()};
+  const open=t=>{if(cur===t){close(true);return}close(false);cur=t;t.setAttribute('aria-expanded','true');const p=document.getElementById(t.getAttribute('aria-controls'));p.hidden=false;
+    if(innerWidth<=560){const r=t.getBoundingClientRect();p.style.top=(r.bottom+8)+'px'}else p.style.top='';p.focus({preventScroll:true})};
+  tabs.forEach((t,i)=>{t.addEventListener('click',()=>open(t));t.addEventListener('keydown',e=>{
+    if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();const n=tabs[(i+(e.key==='ArrowRight'?1:tabs.length-1))%tabs.length];n.focus();if(cur)open(n)}})});
+  nav.querySelectorAll('.ipclose').forEach(b=>b.addEventListener('click',()=>close(true)));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&cur){e.stopPropagation();close(true)}},true);
+  let swallow=false;   // 点外部关闭面板时，吞掉这一次点击，避免误开下面的卡片
+  document.addEventListener('pointerdown',e=>{if(cur&&!nav.contains(e.target)){close(false);swallow=true;setTimeout(()=>swallow=false,600)}},true);
+  document.addEventListener('click',e=>{if(swallow){swallow=false;e.preventDefault();e.stopPropagation()}},true);
+  addEventListener('scroll',()=>{if(cur&&innerWidth<=560)close(false)},{passive:true});
+  addEventListener('resize',()=>close(false));
+})();
+
+function empty(kind){return `<div class="empty"><b>${esc(t(kind+'Title'))}</b>${esc(t(kind+'Hint'))}</div>`}
+function applyLanguage(){
+  document.documentElement.lang=LANG;
+  $('#language').value=LANG;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{el.textContent=t(el.dataset.i18n)});
+  document.querySelectorAll('[data-i18n-aria]').forEach(el=>{el.setAttribute('aria-label',t(el.dataset.i18nAria))});
+  $('#q').placeholder=t('searchPlaceholder');
+  $('#tips').innerHTML=messages[LANG].tipsList.map(n=>`<li>${esc(n)}</li>`).join('');
+  const c=LANG==='zh-CN'?CONFIG:CONFIG.locales?.[LANG];
+  document.title=c?.title||t('titlePrefix')+' '+t('titleRest');
+  if(c){
+    $('#sub').textContent=c.subtitle;
+    document.querySelector('meta[name="description"]').content=c.subtitle;
+    $('#notes').innerHTML=c.notes.map(n=>`<li>${esc(n)}</li>`).join('');
+    $('#foot').textContent=c.footer;
+  }
+  if(loaded){drawTabs();draw()}
+  if(failed)$('#grid').innerHTML=empty('error');
+  if($('#modal').classList.contains('open'))showM();
+}
+$('#language').addEventListener('change',e=>{
+  LANG=e.target.value;
+  try{localStorage.setItem('ai-costume-language',LANG)}catch{}
+  applyLanguage();
+});
+applyLanguage();
+
+fetch('data.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw new Error('data');return r.json()}).then(j=>{
+  D=j.items;CATS=j.cats;COUNTS=j.counts;
+  const c=j.config||{};CONFIG=c;loaded=true;
+  if(typeof c.tryonUrl==='string'&&/^https:\/\//.test(c.tryonUrl))TRYON=c.tryonUrl.replace(/\/+$/,'')+'/';
+  applyLanguage();
+}).catch(()=>{failed=true;$('#grid').innerHTML=empty('error')});
+</script>
+</body>
+</html>

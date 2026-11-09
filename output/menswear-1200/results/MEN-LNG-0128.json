@@ -1,0 +1,13 @@
+{
+  "id": "MEN-LNG-0128",
+  "category": "内衣",
+  "image": "images/内衣/MEN-LNG-0128.png",
+  "thumbnail": "thumbs/内衣/MEN-LNG-0128.webp",
+  "source": "/Users/linweimin/.codex/generated_images/01a195cd-1fc6-79c2-812b-91af7565426f/exec-31d12708-831d-435b-a05f-6ca5af65b3e8.png",
+  "width": 1024,
+  "height": 1536,
+  "sha256": "ac43d23224896322f023b87c187a552f3dd9f8e952db063d53978ef48f7aef32",
+  "promptHash": "628eb958e03d8f41691e3f900731120efdaf25a25ae1f28d87d5abda164043c9",
+  "completedAt": "2026-11-05T03:28:36.243Z",
+  "engine": "内置 imagegen"
+}

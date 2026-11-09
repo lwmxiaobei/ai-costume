@@ -1,0 +1,50 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "ai-costume-studio",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-08-25",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "observability": { "enabled": true },
+  "triggers": {
+    "crons": ["0 3 * * *", "15 * * * *", "* * * * *"]
+  },
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ai-costume-studio-db",
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "vars": {
+    "APP_ENV": "production",
+    "APP_NAME": "衣装集 试穿",
+    "CANONICAL_HOST": "",
+    "BETTER_AUTH_URL": "",
+    "UNIT_PRICE_CENTS": "199",
+    "CHECKOUT_PROJECT_ID": "project_00000000-0000-4000-8000-000000000001",
+    "GALLERY_BASE_URL": "https://ai-costume-zh.lwmlxy520.workers.dev",
+    "KIE_TRYON_MODEL": "google/nano-banana-edit",
+    "CREDITS_PER_PACK": "10",
+    "TRYON_CREDIT_COST": "1",
+    "TRYON_FREE_CREDITS": "2",
+    "TRYON_DAILY_CAP": "500",
+    "TRYON_USER_DAILY_CAP": "50",
+    "ADMIN_EMAILS": "",
+    "EMAIL_PROVIDER": "",
+    "EMAIL_FROM": "",
+    "EMAIL_REPLY_TO": "",
+    "TURNSTILE_SITE_KEY": "",
+    "RATE_LIMIT_DISABLED": "false",
+    "CREEM_API_BASE": "https://api.creem.io",
+    "POLAR_API_BASE": "https://api.polar.sh",
+    "STRIPE_API_BASE": "https://api.stripe.com"
+  }
+}

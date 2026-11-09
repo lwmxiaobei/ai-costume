@@ -1,0 +1,13 @@
+{
+  "id": "MEN-WIN-0042",
+  "category": "冬",
+  "image": "images/冬/MEN-WIN-0042.png",
+  "thumbnail": "thumbs/冬/MEN-WIN-0042.webp",
+  "source": "/Users/linweimin/.codex/generated_images/01a195cd-1fc6-79c2-812b-91af7565426f/exec-381b9768-85cc-4a60-bd3d-b81c5ed2725e.png",
+  "width": 1024,
+  "height": 1536,
+  "sha256": "7702f2baceb3e40e99d97824f27bd0715f4b0af5635b4c596a3e3101bc206d5d",
+  "promptHash": "8538ac32bccb7445441386ac9713528ac05446464eee0aa32bc84131f02f7ef7",
+  "completedAt": "2026-11-04T05:00:16.253Z",
+  "engine": "内置 imagegen"
+}

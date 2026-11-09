@@ -1,0 +1,13 @@
+{
+  "id": "MEN-SPR-0138",
+  "category": "春",
+  "image": "images/春/MEN-SPR-0138.png",
+  "thumbnail": "thumbs/春/MEN-SPR-0138.webp",
+  "source": "/Users/linweimin/.codex/generated_images/01a195cd-1fc6-79c2-812b-91af7565426f/exec-8862ff00-7673-433c-af0f-4ac8363f93bd.png",
+  "width": 1024,
+  "height": 1536,
+  "sha256": "8bb2395af3ffd101c7c5d7f81f78afebf6abef260d4d52d52b04a73b896afaf1",
+  "promptHash": "f96e0fd3bbd23e78be8e1d196ee06c79d95bbe2a325353e83071212611c8f999",
+  "completedAt": "2026-11-05T03:38:32.251Z",
+  "engine": "内置 imagegen"
+}

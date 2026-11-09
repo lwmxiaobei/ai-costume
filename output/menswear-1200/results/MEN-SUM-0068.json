@@ -1,0 +1,13 @@
+{
+  "id": "MEN-SUM-0068",
+  "category": "夏",
+  "image": "images/夏/MEN-SUM-0068.png",
+  "thumbnail": "thumbs/夏/MEN-SUM-0068.webp",
+  "source": "/Users/linweimin/.codex/generated_images/01a195cd-1fc6-79c2-812b-91af7565426f/exec-760afcf7-8c76-423d-9d27-11da5e5bb538.png",
+  "width": 1024,
+  "height": 1536,
+  "sha256": "d7be171dab7b0363330f0d30ac527ae93b5ac27da83a80c00477ef05a70a0811",
+  "promptHash": "f2ac1385a9c9c03c4885046f86279bd964653e61e50b136b3be63d9f066076e1",
+  "completedAt": "2026-11-04T06:19:43.760Z",
+  "engine": "内置 imagegen"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "MEN-SXY-0066",
+  "category": "性感",
+  "image": "images/性感/MEN-SXY-0066.png",
+  "thumbnail": "thumbs/性感/MEN-SXY-0066.webp",
+  "source": "/Users/linweimin/.codex/generated_images/01a195cd-1fc6-79c2-812b-91af7565426f/exec-e8aba057-8189-4ab3-8b8e-b40e44b78d40.png",
+  "width": 1024,
+  "height": 1536,
+  "sha256": "4f0974e17c9d7615ff139e67c6bf669d4c814d2776ec28995e61eb05aa0a0f40",
+  "promptHash": "b9241426b0bc0eaeb136bb9117418400b848f6b773089d060d804534b6dc3982",
+  "completedAt": "2026-11-04T06:09:09.232Z",
+  "engine": "内置 imagegen"
+}

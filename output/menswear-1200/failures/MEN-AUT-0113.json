@@ -1,0 +1,6 @@
+{
+  "id": "MEN-AUT-0113",
+  "error": "image generation failed: http 429 Too Many Requests: Some(\"{\\\"error\\\":{\\\"type\\\":\\\"usage_limit_reached\\\",\\\"message\\\":\\\"The usage limit has been reached\\\",\\\"plan_type\\\":\\\"plus\\\",\\\"resets_at\\\":1793843188,\\\"eligible_promo\\\":null,\\\"limit_window_minutes\\\":null,\\\"resets_in_seconds\\\":55402}}\")",
+  "at": "2026-11-04T10:23:10.515Z",
+  "resolvedAt": "2026-11-05T03:06:00.146Z"
+}

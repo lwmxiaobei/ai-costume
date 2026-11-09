@@ -1,0 +1,93 @@
+{
+  "plans": [
+    {
+      "id": "free",
+      "name": "Free",
+      "description": "Everything needed to evaluate the product.",
+      "sortOrder": 0,
+      "isDefault": true,
+      "isActive": true,
+      "seatBased": false,
+      "trialDays": 0,
+      "features": ["core"],
+      "quotas": { "projects": 3, "api_calls": 1000 },
+      "prices": []
+    },
+    {
+      "id": "pro",
+      "name": "Pro",
+      "description": "For creators shipping a real product.",
+      "sortOrder": 1,
+      "isDefault": false,
+      "isActive": true,
+      "seatBased": false,
+      "trialDays": 14,
+      "features": ["core", "analytics", "priority_support"],
+      "quotas": { "projects": 50, "api_calls": 100000 },
+      "prices": [
+        {
+          "id": "pro_monthly",
+          "provider": "stripe",
+          "providerPriceId": "price_replace_me_pro_monthly",
+          "interval": "month",
+          "amountCents": 1900,
+          "currency": "USD",
+          "usageType": "licensed"
+        },
+        {
+          "id": "pro_yearly",
+          "provider": "stripe",
+          "providerPriceId": "price_replace_me_pro_yearly",
+          "interval": "year",
+          "amountCents": 19000,
+          "currency": "USD",
+          "usageType": "licensed"
+        }
+      ]
+    },
+    {
+      "id": "business",
+      "name": "Business",
+      "description": "Seat based billing for teams.",
+      "sortOrder": 2,
+      "isDefault": false,
+      "isActive": true,
+      "seatBased": true,
+      "trialDays": 14,
+      "features": ["core", "analytics", "priority_support", "sso", "audit_log"],
+      "quotas": { "projects": -1, "api_calls": -1 },
+      "prices": [
+        {
+          "id": "business_monthly",
+          "provider": "stripe",
+          "providerPriceId": "price_replace_me_business_monthly",
+          "interval": "month",
+          "amountCents": 4900,
+          "currency": "USD",
+          "usageType": "licensed"
+        },
+        {
+          "id": "business_yearly",
+          "provider": "stripe",
+          "providerPriceId": "price_replace_me_business_yearly",
+          "interval": "year",
+          "amountCents": 49000,
+          "currency": "USD",
+          "usageType": "licensed"
+        }
+      ]
+    }
+  ],
+  "demoProjects": [
+    {
+      "url": "https://developers.cloudflare.com",
+      "name": "Cloudflare Developers",
+      "description": "Reference documentation for Workers and D1."
+    },
+    {
+      "url": "https://hono.dev",
+      "name": "Hono",
+      "description": "The web framework this template runs on."
+    }
+  ]
+}

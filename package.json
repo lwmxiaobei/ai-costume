@@ -1,0 +1,16 @@
+{
+  "name": "ai-costume-zh",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "samples": "node scripts/make-samples.mjs",
+    "build": "node scripts/build.mjs",
+    "upload:r2": "node scripts/upload-r2.mjs",
+    "test": "node --test test/*.test.mjs",
+    "preview": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.155.0"
+  }
+}

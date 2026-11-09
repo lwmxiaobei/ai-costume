@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.wrangler/
+.claude/
+.remember/
+.playwright-cli/
+.playwright-mcp/
+.DS_Store
+.dev.vars*
+.env*
+!.env.example
+*.log
+coverage/
+output/playwright/
+output/r2-assets/worker-dry-run/

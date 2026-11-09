@@ -1,0 +1,7 @@
+.wrangler
+node_modules
+src
+migrations
+scripts
+docs
+*.log

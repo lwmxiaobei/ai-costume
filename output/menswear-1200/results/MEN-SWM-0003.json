@@ -1,0 +1,13 @@
+{
+  "id": "MEN-SWM-0003",
+  "category": "泳装",
+  "image": "images/泳装/MEN-SWM-0003.png",
+  "thumbnail": "thumbs/泳装/MEN-SWM-0003.webp",
+  "source": "/Users/linweimin/.codex/generated_images/01a195cd-1fc6-79c2-812b-91af7565426f/exec-8f3aebb9-729a-4a46-aa5a-bcb96aac3d11.png",
+  "width": 1024,
+  "height": 1536,
+  "sha256": "54df9a6dd8e8fe81164779c7d058ef5c08808b8f4b39296e1ecd3e2ef569b684",
+  "promptHash": "32f4a1d94ae45fc4ae6cfa870a4b9045f8f3a06e9bb928d1a1a07145365aab70",
+  "completedAt": "2026-11-04T02:05:33.947Z",
+  "engine": "内置 imagegen"
+}

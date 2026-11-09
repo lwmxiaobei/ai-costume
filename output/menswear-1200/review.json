@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "id": "MEN-LNG-0008",
+      "reason": "睡衣图旁边额外生成了一件内裤，需要重做",
+      "status": "completed",
+      "revision": "images/内衣/MEN-LNG-0008-v2.png"
+    },
+    {
+      "id": "MEN-SWM-0011",
+      "reason": "连体泳衣和另一件泳裤同时出现，改为清晰的上下装搭配后重做",
+      "status": "completed",
+      "revision": "images/泳装/MEN-SWM-0011-v2.png"
+    },
+    {
+      "id": "MEN-SWM-0012",
+      "reason": "连体泳衣和另一件泳裤同时出现，改为清晰的上下装搭配后重做",
+      "status": "completed",
+      "revision": "images/泳装/MEN-SWM-0012-v2.png"
+    }
+  ]
+}

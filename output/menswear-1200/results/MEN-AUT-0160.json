@@ -1,0 +1,13 @@
+{
+  "id": "MEN-AUT-0160",
+  "category": "秋",
+  "image": "images/秋/MEN-AUT-0160.png",
+  "thumbnail": "thumbs/秋/MEN-AUT-0160.webp",
+  "source": "/Users/linweimin/.codex/generated_images/01a195cd-1fc6-79c2-812b-91af7565426f/exec-2a86f672-1adb-46a1-bdf0-345debe505f3.png",
+  "width": 1024,
+  "height": 1536,
+  "sha256": "5464c89b293a25de0d0b2e0c461353831f8f335d41c171ab4d3a48be24dfc367",
+  "promptHash": "440087db5306198fa1bf0540cb3c0a292952fc55db9fa9b0337f982e54245e3f",
+  "completedAt": "2026-11-05T04:20:18.293Z",
+  "engine": "内置 imagegen"
+}

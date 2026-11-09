@@ -1,0 +1,13 @@
+{
+  "id": "MEN-PTY-0016",
+  "category": "派对",
+  "image": "images/派对/MEN-PTY-0016.png",
+  "thumbnail": "thumbs/派对/MEN-PTY-0016.webp",
+  "source": "/Users/linweimin/.codex/generated_images/01a195cd-1fc6-79c2-812b-91af7565426f/exec-2226c706-ad6b-4b9a-ac84-3764d14a1e61.png",
+  "width": 1024,
+  "height": 1536,
+  "sha256": "c681118afcb3f4a4290fea02372e8b1af7d496b3eeb82a7296cdfcb8256aabab",
+  "promptHash": "d2f7b9406fb5408c751047c43ce9116f273354f99c15cfceb753d8f0b98ba976",
+  "completedAt": "2026-11-04T03:06:01.047Z",
+  "engine": "内置 imagegen"
+}

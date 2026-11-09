@@ -1,0 +1,48 @@
+{
+  "target": 1200,
+  "completed": 1200,
+  "remaining": 0,
+  "categories": [
+    {
+      "category": "春",
+      "target": 183,
+      "completed": 183
+    },
+    {
+      "category": "夏",
+      "target": 217,
+      "completed": 217
+    },
+    {
+      "category": "秋",
+      "target": 208,
+      "completed": 208
+    },
+    {
+      "category": "冬",
+      "target": 216,
+      "completed": 216
+    },
+    {
+      "category": "内衣",
+      "target": 170,
+      "completed": 170
+    },
+    {
+      "category": "派对",
+      "target": 41,
+      "completed": 41
+    },
+    {
+      "category": "泳装",
+      "target": 46,
+      "completed": 46
+    },
+    {
+      "category": "性感",
+      "target": 119,
+      "completed": 119
+    }
+  ],
+  "failures": 0
+}
