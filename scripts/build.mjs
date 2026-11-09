@@ -80,6 +80,6 @@ const html = readFileSync(join(ROOT, 'src/index.html'), 'utf8').replace(
 );
 writeFileSync(join(DIST, 'index.html'), html);
 copyFileSync(join(ROOT, 'src/i18n.js'), join(DIST, 'i18n.js'));
-writeFileSync(join(DIST, '_headers'), ['/data.json', '  Cache-Control: public, max-age=300', '/*', '  X-Content-Type-Options: nosniff', '  Referrer-Policy: no-referrer', ''].join('\n'));
+writeFileSync(join(DIST, '_headers'), ['/data.json', '  Cache-Control: public, max-age=300', '/*', '  X-Content-Type-Options: nosniff', '  Referrer-Policy: same-origin', ''].join('\n'));
 writeFileSync(join(ASSETS, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n');
 console.log(`完成：${items.length} 套，${manifest.length} 个 R2 图片文件，总计 ${(manifest.reduce((sum, asset) => sum + asset.size, 0) / 1024 ** 3).toFixed(2)} GiB`);
