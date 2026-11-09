@@ -7,7 +7,7 @@ export const messages = {
       '可作为参考图，导入各类 AI 工具的“服装参考”“图像参考”功能使用。',
       '用分类按钮筛选；搜索框支持 ID 和服装关键词（例：牛仔、蕾丝、白、denim）。',
       '下载原图后再使用，细节更完整。',
-      '图中只有服装，没有人物。脸、体型和背景请用其他参考图或提示词补充。'
+      '图中只有服装，没有人物。请勿分享或公开发布改编后的图片。'
     ],
     categoriesLabel: '分类', all: '全部分类', menswear: '男装',
     categories: { 春: '春', 夏: '夏', 秋: '秋', 冬: '冬', 内衣: '内衣', 派对: '派对', 泳装: '泳装', 性感: '性感' },
@@ -17,7 +17,7 @@ export const messages = {
     errorTitle: '数据加载失败', errorHint: '请刷新页面重试。',
     viewImage: '大图查看', previous: '上一套', next: '下一套', keywords: '关键词',
     download: '下载原图', downloadFile: '下载原图（{ext}）', tryOn: '试穿这套',
-    imageCredit: '本站通过 AI 独立生成的男装搭配。预览为压缩图，下载为高清原图。',
+    imageCredit: '图片采用 CC BY-ND 4.0，允许商用，转载须署名，不得发布改编版本。预览为压缩图，下载为高清原图。',
     navigateHint: '切换上一套 / 下一套'
   },
   'zh-TW': {
@@ -28,7 +28,7 @@ export const messages = {
       '可作為參考圖，匯入各類 AI 工具的「服裝參考」「圖像參考」功能使用。',
       '使用分類按鈕篩選；搜尋框支援 ID 和服裝關鍵字（例：牛仔、蕾絲、白、denim）。',
       '下載原圖後再使用，細節更完整。',
-      '圖中只有服裝，沒有人物。臉、體型和背景請用其他參考圖或提示詞補充。'
+      '圖中只有服裝，沒有人物。請勿分享或公開發布改作後的圖片。'
     ],
     categoriesLabel: '分類', all: '全部分類', menswear: '男裝',
     categories: { 春: '春', 夏: '夏', 秋: '秋', 冬: '冬', 内衣: '內衣', 派对: '派對', 泳装: '泳裝', 性感: '性感' },
@@ -38,7 +38,7 @@ export const messages = {
     errorTitle: '資料載入失敗', errorHint: '請重新整理頁面再試。',
     viewImage: '檢視大圖', previous: '上一套', next: '下一套', keywords: '關鍵字',
     download: '下載原圖', downloadFile: '下載原圖（{ext}）', tryOn: '試穿這套',
-    imageCredit: '本站透過 AI 獨立生成的男裝搭配。預覽為壓縮圖，下載為高畫質原圖。',
+    imageCredit: '圖片採用 CC BY-ND 4.0，允許商用，轉載須標示姓名，不得發布改作版本。預覽為壓縮圖，下載為高畫質原圖。',
     navigateHint: '切換上一套 / 下一套'
   },
   en: {
@@ -49,7 +49,7 @@ export const messages = {
       'Import these images into AI tools using their clothing reference or image reference features.',
       'Filter by category or search by ID and clothing keywords, such as denim, lace or white.',
       'Download the original image before use for the best detail.',
-      'The images contain clothing only, with no people. Add faces, body types and backgrounds using other references or prompts.'
+      'The images contain clothing only, with no people. Do not share or publicly distribute adapted images.'
     ],
     categoriesLabel: 'Categories', all: 'All categories', menswear: 'Menswear',
     categories: { 春: 'Spring', 夏: 'Summer', 秋: 'Autumn', 冬: 'Winter', 内衣: 'Underwear', 派对: 'Party', 泳装: 'Swimwear', 性感: 'Sexy' },
@@ -59,7 +59,7 @@ export const messages = {
     errorTitle: 'Unable to load images', errorHint: 'Please refresh the page and try again.',
     viewImage: 'Image preview', previous: 'Previous outfit', next: 'Next outfit', keywords: 'Keywords',
     download: 'Download original', downloadFile: 'Download original ({ext})', tryOn: 'Try this outfit',
-    imageCredit: 'Independently generated AI menswear outfits. Previews are compressed; downloads are full resolution originals.',
+    imageCredit: 'CC BY-ND 4.0: commercial use is allowed, redistribution requires attribution, and adapted images may not be shared. Previews are compressed; downloads are full resolution originals.',
     navigateHint: 'Previous / next outfit'
   },
   ja: {
@@ -70,7 +70,7 @@ export const messages = {
       '各種AIツールの「服装参照」や「画像参照」機能に読み込んで使用できます。',
       'カテゴリで絞り込むか、IDや服装のキーワードで検索できます（例：デニム、レース、白、denim）。',
       '細部まで活用するには、元画像をダウンロードしてからご使用ください。',
-      '画像には服装のみが含まれ、人物は含まれません。顔、体型、背景は別の参考画像やプロンプトで追加してください。'
+      '画像には服装のみが含まれ、人物は含まれません。改変した画像の共有や公開はできません。'
     ],
     categoriesLabel: 'カテゴリ', all: 'すべて', menswear: 'メンズ',
     categories: { 春: '春', 夏: '夏', 秋: '秋', 冬: '冬', 内衣: '下着', 派对: 'パーティー', 泳装: '水着', 性感: 'セクシー' },
@@ -80,7 +80,7 @@ export const messages = {
     errorTitle: '画像を読み込めませんでした', errorHint: 'ページを再読み込みしてください。',
     viewImage: '画像プレビュー', previous: '前のコーデ', next: '次のコーデ', keywords: 'キーワード',
     download: '元画像をダウンロード', downloadFile: '元画像をダウンロード（{ext}）', tryOn: 'このコーデを試着',
-    imageCredit: 'AIで独自に生成したメンズコーデです。プレビューは圧縮画像、ダウンロードは高解像度の元画像です。',
+    imageCredit: 'CC BY-ND 4.0：商用利用が可能です。転載時は作者と出典の表示が必要です。改変版の共有はできません。プレビューは圧縮画像、ダウンロードは高解像度の元画像です。',
     navigateHint: '前 / 次のコーデ'
   }
 };
